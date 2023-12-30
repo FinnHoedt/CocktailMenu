@@ -1,0 +1,122 @@
+@import url("https://fonts.google.com/specimen/Playfair+Display");
+
+html {
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+.header-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9eb87;
+    flex-direction: column;
+}
+
+.header-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1c0221;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0px;
+}
+
+.header-section button {
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    color: #e9eb87;
+    background-color: #1c0221;
+    text-align: center;
+    padding: 10px 60px;
+    border: none;
+}
+
+.menu-section {
+    width: 100%;
+    background-color: #1c0221;
+    padding-top: 20px;
+}
+
+.menu-section div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #e9eb87;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 30px;
+}
+
+.menu-section img {
+    width: 75%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.menu-section ul {
+    width: 100%;
+    list-style: none;
+    color: #e9eb87;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    padding: 0px;
+    padding-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.menu-section ul li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #e9eb87;
+}
+
+.menu-section ul li:last-child {
+    border-bottom: none;
+}
+
+.menu-section hr {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border-bottom: 1px solid #e9eb87;
+    margin-bottom: 30px;
+}
+
+.menu-section h2,
+.menu-section img,
+.menu-section li,
+.menu-section hr {
+    scale: 0.8;
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: 100px 300px;
+}
+
+@keyframes fade-in {
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+.menu-section div:last-child {
+    padding-bottom: 200px;
+}
