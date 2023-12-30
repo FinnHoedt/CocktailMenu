@@ -11,19 +11,22 @@ html {
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    background-color: #e9eb87;
+    background-color: #4da167;
     flex-direction: column;
 }
 
 .header-section h1 {
     font-size: 3rem;
     font-weight: 700;
-    color: #1c0221;
+    background: linear-gradient(to right, #1c0221, #4d7298);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-transform: uppercase;
     text-align: center;
     margin: 0px;
+    margin-top: 20vh;
+    margin-bottom: 20px;
 }
 
 .header-section button {
@@ -32,11 +35,15 @@ html {
     text-transform: uppercase;
     font-family: "Playfair Display", serif;
     font-weight: 700;
-    color: #e9eb87;
-    background-color: #1c0221;
+    background: linear-gradient(to right, #1c0221, #4d7298);
+    color: #4da167;
     text-align: center;
     padding: 10px 60px;
     border: none;
+}
+
+.header-section button:active {
+    color: #1c0221;
 }
 
 .menu-section {
@@ -117,6 +124,14 @@ html {
     }
 }
 
+.menu-section div:last-child li {
+    scale: 0.8;
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view(y);
+    animation-range: 50px 100px;
+}
+
 .menu-section div:last-child {
-    padding-bottom: 200px;
+    padding-bottom: 30px;
 }
