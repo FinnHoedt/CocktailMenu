@@ -68,7 +68,7 @@ html {
 }
 
 .menu-section img {
-    width: 75%;
+    width: 65%;
     height: auto;
     object-fit: cover;
     border-radius: 20px;
@@ -105,14 +105,21 @@ html {
 }
 
 .menu-section h2,
-.menu-section img,
 .menu-section li,
 .menu-section hr {
     scale: 0.8;
     opacity: 0;
     animation: fade-in linear forwards;
     animation-timeline: view(y);
-    animation-range: 75px 150px;
+    animation-range: 75px 200px;
+}
+
+.menu-section img {
+    scale: 0.8;
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view(y);
+    animation-range: 75px 300px;
 }
 
 @keyframes fade-in {
