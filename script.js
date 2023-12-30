@@ -27,4 +27,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
         requestAnimationFrame(scrollToSection);
     });
+
+    const blurryImages = document.querySelectorAll(".blurry");
+    blurryImages.forEach((image) => {
+        image.addEventListener("click", () => {
+            image.classList.toggle("unblurry");
+        });
+    });
 });

@@ -133,3 +133,12 @@ html {
 .menu-section div:last-child {
     padding-bottom: 30px;
 }
+
+.blurry {
+    filter: blur(8px);
+    transition: filter 0.5s ease;
+}
+
+.unblurry {
+    filter: blur(0px);
+}
