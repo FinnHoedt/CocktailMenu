@@ -19,9 +19,7 @@ html {
 .header-section h1 {
     font-size: 3rem;
     font-weight: 700;
-    background: linear-gradient(to right, #1c0221, #4d7298);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #1c0221;
     text-transform: uppercase;
     text-align: center;
     margin: 0px;
@@ -35,7 +33,7 @@ html {
     text-transform: uppercase;
     font-family: "Playfair Display", serif;
     font-weight: 700;
-    background: linear-gradient(to right, #1c0221, #4d7298);
+    background: #1c0221;
     color: #4da167;
     text-align: center;
     padding: 10px 60px;
@@ -114,7 +112,7 @@ html {
     opacity: 0;
     animation: fade-in linear forwards;
     animation-timeline: view(y);
-    animation-range: 100px 300px;
+    animation-range: 75px 150px;
 }
 
 @keyframes fade-in {
